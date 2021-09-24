@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>Chuk Norris</mat-card-title>
+      <mat-card-subtitle>{{joke.id}}</mat-card-subtitle>
+      <img mat-card-sm-image [src]="joke.icon_url" >
+    </mat-card-title-group>
+    <mat-card-content>
+      {{joke.value}}
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="getNewJoke()">New joke</button>
+      </mat-card-actions>
+  </mat-card>
